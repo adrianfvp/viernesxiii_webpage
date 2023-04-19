@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@font-face {
+    font-family: Another-Danger;
+    src: url(../assets/Another-Danger.otf);
+}
+
+:root {
+    --red: #ED2222;
+    --another: Another-danger;
+}
+
+body {
+    background-image: url(../assets/pexels-roger-johansen-7704536.jpg);
+    background-position: center;
+    background-size:cover ;
+    background-attachment: fixed;
+    color: white;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+/* NAVBAR */
+
+.navbar-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-section ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-section {
+    background-color: rgba(5, 5, 5, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 15PX;
+}
+
+.navbar-section nav {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.navbar-center ul {
+    display: flex;
+    font-family: Another-danger;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.navbar-center ul li {
+    margin-right: 24PX;
+}
+
+.navbar-center ul li a:hover {
+    color: var(--red);
+}
+
+.navbar-right {
+    margin-left: 100px;
+}
+
+.navbar-right ul{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbar-right ul li a {
+    font-weight: 300;
+}
+
+.navbar-right ul li .button-registre {
+    color: black;
+    font-family: var(--another);
+    background-color: #ED2222;
+    border: 0px;
+    padding: 8px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin-left: 24px;
+}
+
+.navbar-right ul li .button-registre:hover {
+    color: var(--red);
+    background-color: #000;
+    box-shadow: 0 0 15px 5px #ED2222;
+}
+
+.navbar-section h1 {
+    font-family: var(--another);
+    color: var(--red);
+    position: absolute;
+    font-size: 60px;
+    left: 10%;
+    margin-top: 30px;
+    text-shadow: 10px 10px 0 #000,
+                -10px -10px 0 #000,
+                10px -10px 0 #000,
+                -10px 10px 0 #000;
+}
+
+.navbar-section img {
+    display: none;
+    cursor: pointer;
+}
+
+/* NAVBAR MOBILE */
+
+.navbar-section-mobile a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-section-mobile ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-section-mobile {
+    background-color: rgba(5, 5, 5, 0.6);
+    backdrop-filter: blur(8px);
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    font-size: 30px;
+    margin: 0;
+}
+
+.navbar-section-mobile nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin-left: 60px;
+    height: 100vh;
+}
+
+.navbar-top li {
+    margin-bottom: 20px;
+    font-family: var(--another);
+    letter-spacing: 2.5px;
+}
+
+.navbar-bottom li{
+    margin-bottom: 30px;
+}
+
+.navbar-bottom li .button-registre-mobile {
+    font-family: var(--another);
+    letter-spacing: 2.5px;
+    background-color: var(--red);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar-section-mobile img{ 
+    width: 80px;
+    align-self: flex-end;
+
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.navbar-top {
+    margin-bottom: 100px;
+}
+
+.inactive {
+    display: none;
+}
+
+/* HOME SECTION */
+
+.page {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* MOVIE */
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media img {
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 0;
+    padding-bottom: 40%; /* Proporción de aspecto 4:3 */
+    position: relative;
+    /* max-width: 1000px; */
+    max-height: 650px;
+    margin: 0 auto; /* Centrado horizontal */
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 13px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+  
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+}
+  
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* padding: 10px; */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    margin-bottom: 30px;
+}
+  
+.card-title {
+    margin: 0;
+    font-family: var(--another);
+    font-size: 50px;
+    margin-left: 20px;
+    color: #000;
+    letter-spacing: 4px;
+}
+  
+.card-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-right: 100px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.card-button:hover {
+    box-shadow: 0 0 15px 5px #ED2222
+}
+
+  /* HOME PODCAST SECTION */
+
+  /* PODCAST CARD */
+.podcast-card {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+  
+.card-podcast-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.card-audio {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.card-audio-container {
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3px);
+    height: auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-audio-container {
+    width: 80%;
+    height: 80%;
+    width: fit-content;
+    color: white;
+    font-size: 10px;
+    margin-right: auto;
+    margin-left: 10%;
+}
+  
+.podcast-title {
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+.controls-audio-container {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progress-audio-container {
+    margin-top: 0.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progress-bar {
+    height: 1px;
+    border-radius: 1px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+    background-color: var(--red);
+}
+
+.time-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 5px;
+}
+
+.time-left {
+    margin-top: 0.3rem;
+}
+
+.main-audio-controls {
+    height: 30px;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    height: 80%;
+    width: auto;
+    cursor: pointer;
+}
+
+audio {
+    display: none;
+}
+
+/* PODCAST CONTAINER */
+
+.podcast-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CREEPYPASTA-SECTION */
+
+.creepypasta-container {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.60);
+    backdrop-filter: blur(10px);
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 50px;
+}
+
+.creepypasta-container h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.creepypasta-container p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.creepypasta-container a{
+    text-decoration: none;
+    color: var(--red);
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.social-media-footer img {
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer h5 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/* MEDIA QUERIES */
+
+/* NAVBAR-DESKTOP */
+
+@media (max-width: 1350px) {
+
+    .navbar-section h1 {
+        position: unset;
+        font-size: 40px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .navbar-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-section nav {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 850px) {
+    
+    .navbar-section nav {
+        display: none
+    }
+
+    .navbar-center {
+        display: none;
+    }
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar-section img {
+        display: block;
+        margin: 0px;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .navbar-section {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar-section h1 {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-section img {
+        width: 50px;
+        margin-top: 40px;
+    }
+
+    .navbar-section {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 390px) {
+    .navbar-section img {
+        width: 30px;
+        margin-top: 40px;
+    }
+
+    .navbar-section {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* NAVBAR MOBILE */
+
+@media (max-width: 500px) {
+    .navbar-section-mobile {
+        font-size: 20px;
+    }
+
+    .navbar-top {
+        margin-bottom: 200px;
+    }
+    .navbar-section-mobile img {
+        width: 50px;
+    }
+}
+
+
+/* HOME PAGE */
+
+@media (max-width: 950px) {
+
+    .social-media {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .movie-card {
+        padding-bottom: 50%;
+    }
+
+    .podcast-container {
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .podcast-card {
+        margin: 10px
+    }
+}
+
+@media (max-width: 750px) {
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .movie-week {
+        margin-top: 50px;
+    }
+
+    .movie-card {
+        padding-bottom: 70%;
+    }
+
+    .card-content {
+        margin: 20px;
+    }
+
+    .card-title {
+        font-size: 40px;
+        text-shadow: 1px 3px white;
+    }
+
+    .card-button {
+        font-size: 15px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 650px) {
+    .card-title {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .movie-card {
+        padding-bottom: 80%;
+        margin-bottom: 50px;
+    }
+
+    .card-title {
+        display: none;
+    }
+
+    .card-button {
+        font-size: 13px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
