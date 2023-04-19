@@ -8,10 +8,11 @@
     <title>VIERNES XIII</title>
 </head>
 <body>
+    <div class="blur-backdrop"></div>
     <div class="imagen-fondo"></div>
     <div class="navbar-section">
         <h1>VIERNES XIII</h1>
-        <img src="./assets/menu.png" alt="menú">
+        <img src="./assets/iconos/menu.png" alt="menú">
         <nav>
             <div class="navbar-center">
                 <ul>
@@ -35,14 +36,14 @@
                        <a href="">INGRESA</a>
                     </li>
                     <li>
-                        <a class="button-registre" href="">Registrarse</a>
+                        <a class="button-registre" href="./pages/crear_cuenta.html">Registrarse</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="navbar-section-mobile inactive" >
-        <img src="./assets/atras.png" alt="">
+        <img src="./assetsiconos/atras.png" alt="">
         <nav>
             <div class="navbar-top">
                 <ul>
@@ -74,17 +75,17 @@
 
     </div>
     <div class="page">
-        <div class="home-section">
+         <div class="home-section">
             <div class="social-media">
-                <a href="https://open.spotify.com/show/6tAv5FE0O09D7G30dUq8jR?si=a68e9a2e7a024884" target="_blank" rel="noopener noreferrer"><img  src="./assets/spotify.png" alt="spotify"></a>
-                <a href="https://instagram.com/elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.png" alt="instagram"></a>
-                <a href="https://tiktok.com/@elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/tiktok_logo_icon_187623.png" alt="tiktok"></a>
-                <a href="https://twitch.tv/elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/twitch.png " alt="twitch"></a>
+                <a href="https://open.spotify.com/show/6tAv5FE0O09D7G30dUq8jR?si=a68e9a2e7a024884" target="_blank" rel="noopener noreferrer"><img  src="./assets/social_media/spotify.png" alt="spotify"></a>
+                <a href="https://instagram.com/elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/social_media/instagram.png" alt="instagram"></a>
+                <a href="https://tiktok.com/social_media/@elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/social_media/tiktok_logo_icon_187623.png" alt="tiktok"></a>
+                <a href="https://twitch.tv/elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/social_media/twitch.png " alt="twitch"></a>
             </div>
             <div class="movie-week">
                 <h2>Recomendación de la semana</h2>
                 <div class="movie-card">
-                    <img src="./assets/Pearl-2022_3.jpg" alt="pelicula de la semana PEARL" class="card-img"/>
+                    <img src="./assets/images/Pearl-2022_3.jpg" alt="pelicula de la semana PEARL" class="card-img"/>
                     <div class="card-content">
                         <h3 class="card-title">pearl</h3>
                         <a href="" class="card-button">ver trailer</a>
@@ -95,7 +96,7 @@
                 <h2>Últimos episodios del podcast</h2>
                 <div class="podcast-container">
                     <div class="podcast-card">
-                        <img src="./assets/logo.jpg" alt="Imagen" class="card-podcast-img">
+                        <img src="./assets/images/logo.jpg" alt="Imagen" class="card-podcast-img">
                         <div class="card-audio">
                           <div class="card-audio-container">
                             <div class="title-audio-container">
@@ -113,100 +114,16 @@
                                     <span class="time-left" id="AudioLength"></span>
                                 </div>
                             </div>
-                            <audio controls preload="metadata" src="./assets/E1.mp3"></audio>
+                            <audio controls preload="metadata" src="./assets/podcast/E1.mp3"></audio>
                             <div class="main-audio-controls">
-                                <img src="./assets/diez.png" alt="" class="icon" id="back10">
-                                <img src="./assets/punta-de-flecha-del-boton-de-reproduccion.png" alt="" class="icon" id="PlayPause">
-                                <img src="./assets/diez (1).png" alt="" class="icon" id="Plus10">
+                                <img src="./assets/iconos/diez.png" alt="" class="icon" id="back10">
+                                <img src="./assets/iconos/punta-de-flecha-del-boton-de-reproduccion.png" alt="" class="icon" id="PlayPause">
+                                <img src="./assets/iconos/diez_(1).png" alt="" class="icon" id="Plus10">
                             </div>
                           </div>
                         </div>
                     </div>
                     <!-- TARJETAS DE PRUEBA -->
-                    <div class="podcast-card">
-                        <img src="./assets/logo.jpg" alt="Imagen" class="card-podcast-img">
-                        <div class="card-audio">
-                          <div class="card-audio-container">
-                            <div class="title-audio-container">
-                                <h3 class="podcast-title">Episodio</h3>
-                                <span class="podcast-author">VIERNES XIII</span>
-                            </div>
-                            <div class="controls-audio-container">
-                                <div class="progress-audio-container">
-                                    <div class="progress-bar">
-                                        <span class="progress"></span>
-                                    </div>
-                                </div>
-                                <div class="time-container">
-                                    <span class="time-left" id="CurrentAudioTime"></span>
-                                    <span class="time-left" id="AudioLength"></span>
-                                </div>
-                            </div>
-                            <audio controls preload="metadata" src="./assets/E1.mp3"></audio>
-                            <div class="main-audio-controls">
-                                <img src="./assets/diez.png" alt="" class="icon" id="back10">
-                                <img src="./assets/punta-de-flecha-del-boton-de-reproduccion.png" alt="" class="icon" id="PlayPause">
-                                <img src="./assets/diez (1).png" alt="" class="icon" id="Plus10">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="podcast-card">
-                        <img src="./assets/logo.jpg" alt="Imagen" class="card-podcast-img">
-                        <div class="card-audio">
-                          <div class="card-audio-container">
-                            <div class="title-audio-container">
-                                <h3 class="podcast-title">Episodio</h3>
-                                <span class="podcast-author">VIERNES XIII</span>
-                            </div>
-                            <div class="controls-audio-container">
-                                <div class="progress-audio-container">
-                                    <div class="progress-bar">
-                                        <span class="progress"></span>
-                                    </div>
-                                </div>
-                                <div class="time-container">
-                                    <span class="time-left" id="CurrentAudioTime"></span>
-                                    <span class="time-left" id="AudioLength"></span>
-                                </div>
-                            </div>
-                            <audio controls preload="metadata" src="./assets/E1.mp3"></audio>
-                            <div class="main-audio-controls">
-                                <img src="./assets/diez.png" alt="" class="icon" id="back10">
-                                <img src="./assets/punta-de-flecha-del-boton-de-reproduccion.png" alt="" class="icon" id="PlayPause">
-                                <img src="./assets/diez (1).png" alt="" class="icon" id="Plus10">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="podcast-card">
-                        <img src="./assets/logo.jpg" alt="Imagen" class="card-podcast-img">
-                        <div class="card-audio">
-                          <div class="card-audio-container">
-                            <div class="title-audio-container">
-                                <h3 class="podcast-title">Episodio</h3>
-                                <span class="podcast-author">VIERNES XIII</span>
-                            </div>
-                            <div class="controls-audio-container">
-                                <div class="progress-audio-container">
-                                    <div class="progress-bar">
-                                        <span class="progress"></span>
-                                    </div>
-                                </div>
-                                <div class="time-container">
-                                    <span class="time-left" id="CurrentAudioTime"></span>
-                                    <span class="time-left" id="AudioLength"></span>
-                                </div>
-                            </div>
-                            <audio controls preload="metadata" src="./assets/E1.mp3"></audio>
-                            <div class="main-audio-controls">
-                                <img src="./assets/diez.png" alt="" class="icon" id="back10">
-                                <img src="./assets/punta-de-flecha-del-boton-de-reproduccion.png" alt="" class="icon" id="PlayPause">
-                                <img src="./assets/diez (1).png" alt="" class="icon" id="Plus10">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="creepypasta-section">
@@ -220,10 +137,10 @@
         </div>
         <div class="footer">
             <div class="social-media-footer">
-                <a href="https://open.spotify.com/show/6tAv5FE0O09D7G30dUq8jR?si=a68e9a2e7a024884" target="_blank" rel="noopener noreferrer"><img  src="./assets/spotify.png" alt="spotify"></a>
-                <a href="https://instagram.com/elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.png" alt="instagram"></a>
-                <a href="https://tiktok.com/@elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/tiktok_logo_icon_187623.png" alt="tiktok"></a>
-                <a href="https://twitch.tv/elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/twitch.png " alt="twitch"></a>
+                <a href="https://open.spotify.com/show/6tAv5FE0O09D7G30dUq8jR?si=a68e9a2e7a024884" target="_blank" rel="noopener noreferrer"><img  src="./assets/social_media/spotify.png" alt="spotify"></a>
+                <a href="https://instagram.com/elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/social_media/instagram.png" alt="instagram"></a>
+                <a href="https://tiktok.com/@elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/social_media/tiktok_logo_icon_187623.png" alt="tiktok"></a>
+                <a href="https://twitch.tv/elviernesxiii" target="_blank" rel="noopener noreferrer"><img src="./assets/social_media/twitch.png " alt="twitch"></a>
             </div>
             <h5>2023©  Escópica Films</h5>
         </div>

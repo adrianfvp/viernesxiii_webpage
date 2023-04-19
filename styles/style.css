@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 @font-face {
     font-family: Another-Danger;
-    src: url(../assets/Another-Danger.otf);
+    src: url(../assets/fonts/Another-Danger.otf);
 }
 
 :root {
+    --dark-red: #A90000;
     --red: #ED2222;
     --another: Another-danger;
 }
 
 body {
-    background-image: url(../assets/pexels-roger-johansen-7704536.jpg);
+    background-image: url(../assets/images/pexels-roger-johansen-7704536.jpg);
     background-position: center;
     background-size:cover ;
     background-attachment: fixed;
@@ -109,6 +110,7 @@ body {
                 -10px -10px 0 #000,
                 10px -10px 0 #000,
                 -10px 10px 0 #000;
+    cursor: default;
 }
 
 .navbar-section img {
@@ -462,6 +464,96 @@ audio {
     font-weight: 200;
 }
 
+
+/* REGISTRO */
+
+.crear-cuenta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 40px;
+    border-radius: 50px;
+    max-width: 800px;
+    align-self: center;
+}
+.crear-cuenta-container h3, .ingresar-cuenta-container h3 {
+    font-size: 25px;
+    font-family: var(--another);
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--red);
+    letter-spacing: 2px;
+}
+
+.crear-cuenta-container span, .ingresar-cuenta-container span {
+    background-color: var(--red);
+    padding: 5px 30px;
+    font-size: 20px;
+    font-family: var(--another);
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.crear-cuenta-container span:hover {
+    color: var(--red);
+    background-color: #000;
+    box-shadow: 0 0 15px 5px #ED2222;
+}
+
+.close_button {
+    width: 30px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.image-button {
+    background-color: var(--red);
+    border-radius: 100px;
+    padding: 10px;
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.crear-cuenta-container input, .ingresar-cuenta-container input {
+    border: none;
+    background-color: var(--dark-red);
+    margin: 8px;
+    padding: 12px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+}
+
+.crear-cuenta-container input::placeholder, .ingresar-cuenta-container input::placeholder {
+    color: rgb(255, 142, 142);
+}
+
+/*  INICIAR SESIÓN */
+
+.ingresar-cuenta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 40px;
+    border-radius: 50px;
+    max-width: 800px;
+    align-self: center;
+}
+
+
+
 /* MEDIA QUERIES */
 
 /* NAVBAR-DESKTOP */
@@ -645,5 +737,14 @@ audio {
         margin: auto;
         justify-content: center;
         align-items: center;
+    }
+}
+
+/* REGISTRO */
+
+@media (max-width: 500px) {
+    .crear-cuenta-container input{
+        width: 200px;
+        padding: 8px;
     }
 }
