@@ -8,6 +8,8 @@
     --dark-red: #A90000;
     --red: #ED2222;
     --another: Another-danger;
+    --shadow-cards: 0px 0px 5px 13px rgba(0, 0, 0, 0.25);
+    --background-cards: rgba(5, 5, 5, 0.6);
 }
 
 body {
@@ -110,7 +112,7 @@ body {
                 -10px -10px 0 #000,
                 10px -10px 0 #000,
                 -10px 10px 0 #000;
-    cursor: default;
+    cursor: pointer;
 }
 
 .navbar-section img {
@@ -552,7 +554,191 @@ audio {
     align-self: center;
 }
 
+/* RELATOS PAGE */
 
+.relatos-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 80vw;
+}
+
+#escribir-relato {
+    background-color: var(--red);
+    margin: 50px auto;
+    padding: 5px 25px;
+    font-weight: 400;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.25);
+    color: white;
+    text-decoration: none;
+}
+
+.relato-preview-card {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 30px;
+
+    margin-bottom: 50px;
+}
+
+#foto-perfil {
+    width: 60px;
+    border: 5px solid #ED2222;
+    border-radius: 50px;
+}
+
+.relato-card-top {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.relato-card-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-user h2 {
+    font-size: 25px;
+    margin: -5px;
+}
+
+.titulo-user h3 {
+    margin: 0px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.contenido-relato {
+    text-align: justify;
+}
+
+#leer-mas {
+    border: none;
+    background-color: var(--red);
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* ESCRIBIR RELATO */
+
+.escribir-relato-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    margin-top: 100px;
+    background-color: var(--background-cards);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 50px;
+    margin-bottom: 100px;
+}
+
+.escribir-relato-container h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.escribir-relato-container input {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#titulo-relato {
+    width: 80%;
+    margin: -10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.escribir-relato-container textarea {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    max-width: 80%;
+    height: 500px;
+}
+
+#enviar-relato {
+    background-color: var(--red);
+    color: white;
+    margin-top: 20px;
+    font-family: var(--another);
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 17px;
+    width: 20%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#enviar-relato:hover {
+    color: var(--red);
+    background-color: #000;
+    box-shadow: 0 0 15px 5px #ED2222;
+}
+
+.escribir-relato-container h5{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+/* RELATO COMPLETO */
+
+.relato-container {
+    background-color: var(--background-cards);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto;
+    padding: 30px 40px;
+    margin-top: 100px;
+    border-radius: 50px;
+}
+
+.titulo {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.autor {
+    margin: 0;
+    font-weight: 200;
+}
+
+.contenido-relato {
+    margin-top: 30px;
+}
 
 /* MEDIA QUERIES */
 
@@ -611,14 +797,24 @@ audio {
 }
 
 @media (max-width: 500px) {
+
+    .navbar-section {
+        align-items: flex-start;
+    }
+
     .navbar-section img {
         width: 50px;
         margin-top: 40px;
+        margin-left: 0;
     }
 
     .navbar-section {
         justify-content: center;
         align-items: center;
+    }
+
+    .navbar-section h1 {
+        position: relative;
     }
 }
 
@@ -746,5 +942,75 @@ audio {
     .crear-cuenta-container input{
         width: 200px;
         padding: 8px;
+    }
+}
+
+/* RELATOS PAGE */
+
+@media (max-width: 800px) {
+    .relato-card-top {
+        justify-content: center;
+        flex-direction: column;
+    }
+    #foto-perfil{
+        margin-bottom: 10px;
+        width: 50px;
+    }
+
+    .titulo-user {
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .relato-card-top {
+        justify-content: center;
+        flex-direction: column;
+    }
+    #foto-perfil{
+        margin-bottom: 10px;
+        width: 40px;
+    }
+
+    .titulo-user h2 {
+        font-size: 20px;
+    }
+
+    .titulo-user h3 {
+        font-size: 12px;
+    }
+
+    .contenido-relato {
+        font-size: 13px;
+    }
+
+    #leer-mas{
+        align-self: center;
+    }
+} 
+
+/* ESCRIBIR RELATO */
+
+@media (max-width: 850px) {
+    #titulo-relato {
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .escribir-relato-container {
+        padding: 20px;
+        width: 73vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #titulo-relato {
+        width: 80%;
+    }
+
+    #enviar-relato {
+        width: 50%;
     }
 }
