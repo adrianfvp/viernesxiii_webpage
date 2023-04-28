@@ -850,6 +850,49 @@ audio {
     text-align: justify;
 }
 
+/* CREEPYPASTAS SECTION */
+
+.creepypastas-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.creepypastas-card {
+    width: 270px;
+    height: 270px;
+    background-color: var(--background-cards);
+    padding: 20px;
+    border-radius: 40px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.titulo-creepypasta-card {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.creepypastas-card p {
+    font-size: 12px;
+    margin: 0;
+    text-align: justify;
+}
+
 /* MEDIA QUERIES */
 
 /* NAVBAR-DESKTOP */
@@ -1195,5 +1238,11 @@ audio {
 
     .usuario-comment {
         font-size: 17px;
+    }
+}
+
+@media (max-width: 400px) {
+    .creepypastas-card {
+        height: 300px;
     }
 }
