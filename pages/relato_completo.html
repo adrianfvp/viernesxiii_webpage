@@ -11,7 +11,7 @@
     <div class="imagen-fondo"></div>
     <div class="navbar-section">
         <a href="../index.html"><h1>VIERNES XIII</h1></a>
-        <img src="../assets/iconos/menu.png" alt="menú">
+        <img src="../assets/iconos/menu.png" alt="menú" class="button-mobile-menu">
         <nav>
             <div class="navbar-center">
                 <ul>
@@ -20,12 +20,6 @@
                     </li>
                     <li>
                         <a href="./relatos.html">Relatos</a>
-                    </li>
-                    <li>
-                        <a href="./creepypastas.html">Creepypastas</a>
-                    </li>
-                    <li>
-                        <a href="./podcast.html">Podcast</a>
                     </li>
                 </ul>
             </div>
@@ -36,6 +30,13 @@
                     </li>
                     <li>
                         <a class="button-registre" href="./crear_cuenta.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-right-user inactive">
+                <ul>
+                    <li>
+                        <a href="./profile.html" class="profile-button">PERFIL</a>
                     </li>
                 </ul>
             </div>
@@ -50,13 +51,7 @@
                         <a href="./index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="./pages/relatos.html">Relatos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/creepypastas.html">Creepypastas</a>
-                    </li>
-                    <li>
-                        <a href="./pages/podcast.html">Podcast</a>
+                        <a href="./relatos.html">Relatos</a>
                     </li>
                 </ul>
             </div>
@@ -66,7 +61,14 @@
                        <a href="./pages/iniciar_sesion.html">INGRESA</a>
                     </li>
                     <li>
-                        <a class="button-registre-mobile" href="./pages/crear_cuenta.html">Registrarse</a>
+                        <a class="button-registre-mobile" href="./crear_cuenta.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-bottom-profile inactive">
+                <ul>
+                    <li>
+                        <a href="./profile.html">PERFIL</a>
                     </li>
                 </ul>
             </div>
@@ -75,63 +77,12 @@
     </div>
     <div class="page">
         <div class="relato-container">
-            <h3 class="titulo">Titulo relato</h3>
-            <h4 class="autor">escrito por usuario001</h4>
-            <p class="contenido-relato">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates facilis repellat reiciendis dolores, odio inventore sapiente officia dignissimos nulla ducimus et architecto, necessitatibus amet consequuntur natus impedit, quis recusandae. 
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias alias dolor adipisci est blanditiis temporibus, mollitia odio cum. Corporis velit atque magnam necessitatibus amet accusamus ea minima voluptatem incidunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facere tenetur amet rem inventore quas non nobis voluptates molestias adipisci, iste, perferendis iusto magnam quisquam quibusdam modi voluptas reiciendis quo,
-            <br>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis architecto dolorum adipisci ex expedita illum recusandae quo, cum, totam pariatur omnis eaque nihil blanditiis assumenda neque modi aperiam asperiores quis.
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, cumque dolor porro consequuntur, labore iure enim eaque facilis exercitationem itaque voluptas aliquam eveniet minima doloribus beatae quod magnam ipsam amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet tempora nobis fuga, atque autem corrupti repellat illo consequuntur sit, ex reiciendis obcaecati ratione officiis iusto? Accusantium, facere. Labore, reprehenderit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero in blanditiis quis consequatur ut magni dolorum magnam nobis? Et aperiam harum, odio sed dolore ipsam aspernatur quisquam ex nulla! Odit!
+            <h3 class="titulo"></h3>
+            <h4 class="autor"></h4>
+            <p class="contenido-relato">
             </p>
         </div>
-        <a href="./escribir_relato.html" id="escribir-relato">Escribe tu relato</a>
-        <div class="escribir-comentario-container">
-            <h4>Escribe un comentario</h4>
-            <textarea name="comentario" id="comment" placeholder="Escribe aquí tu comentario"></textarea>
-            <input type="submit" id="enviar-comentario">
-        </div>
-        <div class="comentarios-section">
-            <h3 class="comentario-title">comentarios</h3>
-            <div class="comentarios-container">
-                <div class="comentario-card">
-                    <div class="left-comment-section">
-                        <img src="../assets/iconos/user.png" alt="imagen de perfil">
-                    </div>
-                    <div class="right-comment-section">
-                        <h4 class="usuario-comment">
-                            usuario001
-                        </h4>
-                        <p class="comentario-usuario">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, ullam omnis? Alias, repudiandae molestias sint, iure quidem inventore esse saepe consequuntur unde, optio ut illum ipsam cumque voluptatem natus autem.</p>
-                    </div>
-                </div>
-
-                <div class="comentario-card">
-                    <div class="left-comment-section">
-                        <img src="../assets/iconos/user.png" alt="imagen de perfil">
-                    </div>
-                    <div class="right-comment-section">
-                        <h4 class="usuario-comment">
-                            usuario001
-                        </h4>
-                        <p class="comentario-usuario">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, ullam omnis? Alias, repudiandae molestias sint, iure quidem inventore esse saepe consequuntur unde, optio ut illum ipsam cumque voluptatem natus autem.</p>
-                    </div>
-                </div>
-
-                <div class="comentario-card">
-                    <div class="left-comment-section">
-                        <img src="../assets/iconos/user.png" alt="imagen de perfil">
-                    </div>
-                    <div class="right-comment-section">
-                        <h4 class="usuario-comment">
-                            usuario001
-                        </h4>
-                        <p class="comentario-usuario">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, ullam omnis? Alias, repudiandae molestias sint, iure quidem inventore esse saepe consequuntur unde, optio ut illum ipsam cumque voluptatem natus autem.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a id="escribir-relato">Escribe tu relato</a>
     </div>
     <div class="footer">
         <div class="social-media-footer">
@@ -142,5 +93,6 @@
         </div>
         <h5>2023©  Escópica Films</h5>
     </div>
+    <script src="../assets/main.js?v=3"></script>
 </body>
 </html>

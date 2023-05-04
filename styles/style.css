@@ -63,7 +63,7 @@ body {
 }
 
 .navbar-center ul li {
-    margin-right: 24PX;
+    margin-right: 24px;
 }
 
 .navbar-center ul li a:hover {
@@ -120,6 +120,15 @@ body {
     cursor: pointer;
 }
 
+.navbar-right-user {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.navbar-right-user .profile-button {
+    color: var(--red);
+}
+
 /* NAVBAR MOBILE */
 
 .navbar-section-mobile a {
@@ -136,7 +145,7 @@ body {
 .navbar-section-mobile {
     background-color: rgba(5, 5, 5, 0.6);
     backdrop-filter: blur(8px);
-    width: 80%;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -144,6 +153,8 @@ body {
     flex-direction: column;
     font-size: 30px;
     margin: 0;
+    position: absolute;
+    z-index: 1;
 }
 
 .navbar-section-mobile nav {
@@ -182,6 +193,14 @@ body {
 
 .navbar-top {
     margin-bottom: 100px;
+}
+
+.navbar-bottom-profile {
+    margin-bottom: 30px;
+}
+
+.navbar-bottom-profile ul li a {
+    color: var(--red);
 }
 
 .inactive {
@@ -283,142 +302,9 @@ h2 {
     box-shadow: 0 0 15px 5px #ED2222
 }
 
-  /* HOME PODCAST SECTION */
-
-  /* PODCAST CARD */
-.podcast-card {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.25);
-    margin-bottom: 100px;
-}
-  
-.card-podcast-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-  
-.card-audio {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    color: black;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-
-.card-audio-container {
-    background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(3px);
-    height: auto;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.title-audio-container {
-    width: 80%;
-    height: 80%;
-    width: fit-content;
-    color: white;
-    font-size: 10px;
-    margin-right: auto;
-    margin-left: 10%;
-}
-  
-.podcast-title {
-    font-weight: 500;
-    font-size: 14px;
-    color: white;
-}
-
-.controls-audio-container {
-    width: 80%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.progress-audio-container {
-    margin-top: 0.6rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.progress-bar {
-    height: 1px;
-    border-radius: 1px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-}
-
-.progress {
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    border-radius: 3px;
-    background-color: var(--red);
-}
-
-.time-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    font-size: 5px;
-}
-
-.time-left {
-    margin-top: 0.3rem;
-}
-
-.main-audio-controls {
-    height: 30px;
-    width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.icon {
-    height: 80%;
-    width: auto;
-    cursor: pointer;
-}
-
-audio {
-    display: none;
-}
-
-/* PODCAST CONTAINER */
-
-.podcast-container {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* CREEPYPASTA-SECTION */
 
-.creepypasta-container {
+.relato-home-container {
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.60);
     backdrop-filter: blur(10px);
@@ -427,19 +313,19 @@ audio {
     border-radius: 50px;
 }
 
-.creepypasta-container h3 {
+.relato-home-container h3 {
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 25px;
     font-weight: 500;
 }
 
-.creepypasta-container p {
+.relato-home-container p {
     margin: 0;
     font-weight: 300;
 }
 
-.creepypasta-container a{
+.relato-home-container a{
     text-decoration: none;
     color: var(--red);
 }
@@ -574,6 +460,7 @@ audio {
     box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.25);
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .relato-preview-card {
@@ -637,6 +524,7 @@ audio {
     border-radius: 5px;
     align-self: flex-end;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* ESCRIBIR RELATO */
@@ -740,157 +628,55 @@ audio {
     margin-top: 30px;
 }
 
-/* ESCRIBIR COMENTARIO */
 
-.escribir-comentario-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60vw;
-    margin: auto;
-    margin-top: 20px;
+/* PERFIL */
+
+.profile-container {
     background-color: var(--background-cards);
     backdrop-filter: blur(8px);
-    padding: 30px;
-    border-radius: 50px;
-    margin-bottom: 50px;
-}
-
-.escribir-comentario-container h4 {
-    margin: 10;
-    margin-top: 0px;
-    align-self: flex-start;
-    margin-bottom: 15px;
-    margin-left: 5px;
-}
-
-.escribir-comentario-container textarea {
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    width: 95%;
-    max-width: 95%;
-    height: 90px;
-    max-height: 100px;
-    background-color: #e4e4e4;
-    margin-bottom: 20px;
-}
-
-#enviar-comentario {
-    background-color: var(--red);
-    border: none;
-    align-self: flex-end;
-    margin-right: 10px;
-    padding: 5px;
-    color: white;
-    font-size: 15px;
-    width: 20%;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-}
-
-#enviar-comentario:hover {
-    color: var(--red);
-    background-color: #000;
-    box-shadow: 0 0 15px 5px #ED2222;
-}
-
-/* COMENTARIOS SECTION */
-
-.comentarios-section {
-    width: 60vw;
-    margin: auto;
-}
-
-.comentario-title {
-    font-size: 25px;
-}
-
-/* COMENTARIOS CONTAINER */
-
-.comentarios-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 0;
-    width: 57vw;
-}
-
-.comentario-card {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: var(--background-cards);
-    backdrop-filter: blur(8px);
-    border-radius: 30px;
-    padding: 30px;
-    margin: auto;
-    margin-bottom: 50px;
-}
-
-.left-comment-section img {
-    width: 80px;
-    border: 5px solid #ED2222;
-    border-radius: 100px;
-    margin-right: 20px;
-}
-
-.usuario-comment {
-    margin: 0;
-    font-size: 20px;
-}
-
-.comentario-usuario {
-    margin: 0px;
-    font-weight: 200px;
-    text-align: justify;
-}
-
-/* CREEPYPASTAS SECTION */
-
-.creepypastas-page-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-top: 50px;
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-.creepypastas-card {
-    width: 270px;
-    height: 270px;
-    background-color: var(--background-cards);
-    padding: 20px;
-    border-radius: 40px;
-    backdrop-filter: blur(8px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px;
-    margin-bottom: 0;
-}
-
-.titulo-creepypasta-card {
-    margin: 0;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1;
-    margin-bottom: 10px;
     text-align: center;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto;
+    padding: 30px 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 50px;
 }
 
-.creepypastas-card p {
-    font-size: 12px;
-    margin: 0;
-    text-align: justify;
+#picture-profile-card {
+    width: 100px;
+    align-self: center;
+}
+
+#username-profile {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+#nombre-profile {
+    margin: 5px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#email-profile {
+    margin: 5px;
+    font-size: 20px;
+    color: var(--red);
+}
+
+#cerrar-sesion-profile {
+    background-color: var(--red);
+    width: 20vw;
+    align-self: center;
+    padding: 3px;
+    border-radius: 7px;
+    margin: 20px;
 }
 
 /* MEDIA QUERIES */
@@ -1241,8 +1027,23 @@ audio {
     }
 }
 
-@media (max-width: 400px) {
-    .creepypastas-card {
-        height: 300px;
+/* PERFIL */
+
+@media (max-width: 600px) {
+    #username-profile {
+        font-size: 15px;
+    }
+
+    #nombre-profile {
+        font-size: 17px;
+    }
+
+    #email-profile {
+        font-size: 17px;
+    }
+
+    #cerrar-sesion-profile {
+        font-size: 16px;
+        width: 20px;
     }
 }

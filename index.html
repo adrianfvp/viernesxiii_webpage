@@ -12,7 +12,7 @@
     <div class="imagen-fondo"></div>
     <div class="navbar-section">
         <a href="./index.html"><h1>VIERNES XIII</h1></a>
-        <img src="./assets/iconos/menu.png" alt="menú">
+        <img src="./assets/iconos/menu.png" alt="menú" class="button-mobile-menu">
         <nav>
             <div class="navbar-center">
                 <ul>
@@ -21,12 +21,6 @@
                     </li>
                     <li>
                         <a href="./pages/relatos.html">Relatos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/creepypastas.html">Creepypastas</a>
-                    </li>
-                    <li>
-                        <a href="./pages/podcast.html">Podcast</a>
                     </li>
                 </ul>
             </div>
@@ -40,10 +34,16 @@
                     </li>
                 </ul>
             </div>
+            <div class="navbar-right-user inactive">
+                <ul>
+                    <li>
+                        <a href="./pages/profile.html" class="profile-button">PERFIL</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
     <div class="navbar-section-mobile inactive" >
-        <img src="./assetsiconos/atras.png" alt="">
         <nav>
             <div class="navbar-top">
                 <ul>
@@ -52,12 +52,6 @@
                     </li>
                     <li>
                         <a href="./pages/relatos.html">Relatos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/creepypastas.html">Creepypastas</a>
-                    </li>
-                    <li>
-                        <a href="./pages/podcast.html">Podcast</a>
                     </li>
                 </ul>
             </div>
@@ -68,6 +62,13 @@
                     </li>
                     <li>
                         <a class="button-registre-mobile" href="./pages/crear_cuenta.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-bottom-profile inactive">
+                <ul>
+                    <li>
+                        <a href="./pages/profile.html">PERFIL</a>
                     </li>
                 </ul>
             </div>
@@ -88,50 +89,8 @@
                     <img src="./assets/images/Pearl-2022_3.jpg" alt="pelicula de la semana PEARL" class="card-img"/>
                     <div class="card-content">
                         <h3 class="card-title">pearl</h3>
-                        <a href="" class="card-button">ver trailer</a>
+                        <a href="https://www.youtube.com/watch?v=L5PW5r3pEOg&ab_channel=A24" target="_blank" rel="noopener noreferrer" class="card-button">ver trailer</a>
                     </div>
-                </div>
-            </div>
-            <div class="podcast-section">
-                <h2>Últimos episodios del podcast</h2>
-                <div class="podcast-container">
-                    <div class="podcast-card">
-                        <img src="./assets/images/logo.jpg" alt="Imagen" class="card-podcast-img">
-                        <div class="card-audio">
-                          <div class="card-audio-container">
-                            <div class="title-audio-container">
-                                <h3 class="podcast-title">Episodio</h3>
-                                <span class="podcast-author">VIERNES XIII</span>
-                            </div>
-                            <div class="controls-audio-container">
-                                <div class="progress-audio-container">
-                                    <div class="progress-bar">
-                                        <span class="progress"></span>
-                                    </div>
-                                </div>
-                                <div class="time-container">
-                                    <span class="time-left" id="CurrentAudioTime"></span>
-                                    <span class="time-left" id="AudioLength"></span>
-                                </div>
-                            </div>
-                            <audio controls preload="metadata" src="./assets/podcast/E1.mp3"></audio>
-                            <div class="main-audio-controls">
-                                <img src="./assets/iconos/diez.png" alt="" class="icon" id="back10">
-                                <img src="./assets/iconos/punta-de-flecha-del-boton-de-reproduccion.png" alt="" class="icon" id="PlayPause">
-                                <img src="./assets/iconos/diez_(1).png" alt="" class="icon" id="Plus10">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- TARJETAS DE PRUEBA -->
-                </div>
-            </div>
-            <div class="creepypasta-section">
-                <h2>Creepypasta</h2>
-                <div class="creepypasta-container">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, consequatur! Provident saepe aperiam eveniet architecto accusamus ea autem eum earum reiciendis voluptatum minima, commodi et? Pariatur ipsam nemo rerum non.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus voluptate facere dolor expedita provident natus eius quaerat. Recusandae aut iste ratione pariatur, veniam esse magnam, reprehenderit ipsa eveniet officiis placeat psa eveniet officiis placeat... <a class="creepy-link" href="#">continuar leyendo</a></p>
                 </div>
             </div>
         </div>
@@ -145,5 +104,6 @@
             <h5>2023©  Escópica Films</h5>
         </div>
     </div>
+    <script src="./assets/main.js"></script>
 </body>
 </html>

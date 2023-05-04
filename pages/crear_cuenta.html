@@ -11,21 +11,15 @@
     <div class="imagen-fondo"></div>
     <div class="navbar-section">
         <a href="../index.html"><h1>VIERNES XIII</h1></a>
-        <img src="../assets/iconos/menu.png" alt="menú">
+        <img src="../assets/iconos/menu.png" alt="menú" class="button-mobile-menu">
         <nav>
             <div class="navbar-center">
                 <ul>
                     <li>
-                        <a href="">Inicio</a>
+                        <a href="../index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="">Relatos</a>
-                    </li>
-                    <li>
-                        <a href="">Creepypastas</a>
-                    </li>
-                    <li>
-                        <a href="">Podcast</a>
+                        <a href="./relatos.html">Relatos</a>
                     </li>
                 </ul>
             </div>
@@ -39,10 +33,16 @@
                     </li>
                 </ul>
             </div>
+            <div class="navbar-right-user inactive">
+                <ul>
+                    <li>
+                        <a href="./profile.html" class="profile-button">PERFIL</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
-    <div class="navbar-section-mobile inactive" >
-        <img src="./assetsiconos/atras.png" alt="">
+    <div class="navbar-section-mobile inactive" >>
         <nav>
             <div class="navbar-top">
                 <ul>
@@ -50,23 +50,24 @@
                         <a href="./index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="./pages/relatos.html">Relatos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/creepypastas.html">Creepypastas</a>
-                    </li>
-                    <li>
-                        <a href="./pages/podcast.html">Podcast</a>
+                        <a href="./relatos.html">Relatos</a>
                     </li>
                 </ul>
             </div>
             <div class="navbar-bottom">
                 <ul>
                     <li>
-                       <a href="./pages/iniciar_sesion.html">INGRESA</a>
+                       <a href="./iniciar_sesion.html">INGRESA</a>
                     </li>
                     <li>
-                        <a class="button-registre-mobile" href="./pages/crear_cuenta.html">Registrarse</a>
+                        <a class="button-registre-mobile" href="./crear_cuenta.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-bottom-profile inactive">
+                <ul>
+                    <li>
+                        <a href="./profile.html">PERFIL</a>
                     </li>
                 </ul>
             </div>
@@ -75,13 +76,11 @@
     </div>
     <div class="page">
         <div class="crear-cuenta-container">
-            <img class="close_button" src="../assets/iconos/eliminar_(1).png" alt="">
             <h3>Crear cuenta</h3>
-            <img class="image-button" src="../assets/iconos/image.png" alt="">
             <input type="text"  name="Nombre" id="create-name" placeholder="Nombre">
-            <input type="text" name="Usuario" id="crete-user" placeholder="usuario">
             <input type="email" name="Correo" id="create-email" placeholder="Email">
             <input type="password" name="Contraseña" id="create-password" placeholder="Contrseña">
+            <h5 class="registro-exitoso" id="mensaje"></h5>
             <span id="submit-registro">Registrate</span>
         </div>
     </div>
@@ -94,5 +93,6 @@
         </div>
         <h5>2023©  Escópica Films</h5>
     </div>
+    <script src="../assets/main.js?v=6"></script>
 </body>
 </html>
